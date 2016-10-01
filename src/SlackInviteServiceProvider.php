@@ -27,7 +27,7 @@ class SlackInviteServiceProvider extends ServiceProvider
     public function watchUserCreated()
     {
         User::created(function ($user) {
-            (new SlackInvite())->handle($user);
+            (new SlackInvite())->handle($user->email);
         });
     }
 }

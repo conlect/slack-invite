@@ -12,10 +12,10 @@ class SlackInvite
         $this->client = new Client();
     }
 
-    public function handle($user)
+    public function handle($email)
     {
         $this->client->request('POST',
-            config('slack-invite.url').'/api/users.admin.invite?t='.time().'&email='.$user->email.'&token='.config('slack-invite.token').'&set_active=true&_attempts=1'
+            config('slack-invite.url').'/api/users.admin.invite?t='.time().'&email='.$email.'&token='.config('slack-invite.token').'&set_active=true&_attempts=1'
         );
     }
 }
