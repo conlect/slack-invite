@@ -1,0 +1,22 @@
+{
+    "name": "conlect/slack-invite",
+    "description": "Laravel 5 Automatic Slack Invite.",
+    "keywords": ["laravel", "slack"],
+    "license": "MIT",
+    "authors" : [
+        {
+            "name": "Jeremy Tubbs",
+            "email": "jtubbs@conlect.io",
+            "homepage": "http://conlect.io"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Conlect\\SlackInvite\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.5.9",
+        "guzzlehttp/guzzle": "^6.2"
+    }
+}
