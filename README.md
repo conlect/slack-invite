@@ -1,6 +1,6 @@
 # Laravel 5 Slack Invite
 
-Automatically invite users to your Slack team when they register for you site.
+Automatically invite users to your Slack team when they register for your site.
 
 ## Usage
 
